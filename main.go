@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Print(domain.Note{
+	fmt.Println(domain.Note{
 		Pitch:      pitch.C,
 		Octave:     1,
 		Duration:   0,
