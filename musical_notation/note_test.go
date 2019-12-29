@@ -1,8 +1,9 @@
 package musical_notation
 
 import (
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
 	"testing"
+
+	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
 )
 
 func TestNoteFormatWithDieseAndPositiveOctave(t *testing.T) {
