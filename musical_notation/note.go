@@ -1,9 +1,9 @@
-package domain
+package musical_notation
 
 import (
 	"fmt"
-	"gitlab.com/read-music-learner/musical-notation/domain/pitch"
-	"gitlab.com/read-music-learner/musical-notation/domain/rhythm"
+	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
+	"gitlab.com/read-music-learner/musical-notation/musical_notation/rhythm"
 )
 
 type Note struct {

@@ -1,7 +1,7 @@
-package domain
+package musical_notation
 
 import (
-	"gitlab.com/read-music-learner/musical-notation/domain/pitch"
+	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
 	"testing"
 )
 
