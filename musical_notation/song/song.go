@@ -1,19 +1,29 @@
 package song
 
-import "gitlab.com/read-music-learner/musical-notation/musical_notation"
+import (
+	"encoding/json"
+	"gitlab.com/read-music-learner/musical-notation/musical_notation"
+)
 
-//Song Represent a list of notes
+//Song Represent a list of Notes
 type Song struct {
-	notes []musical_notation.Note
+	Notes []musical_notation.Note
 }
 
-func (s Song) print() string {
+//Concat all notes
+func (s Song) Print() string {
 	var songPrinted = ""
-	for i, note := range s.notes {
+	for i, note := range s.Notes {
 		if i != 0 {
 			songPrinted += ", "
 		}
 		songPrinted += note.Print()
 	}
 	return songPrinted
+}
+
+func (s Song) PrintJson() (string, error) {
+	b, err := json.Marshal(s)
+
+	return string(b), err
 }
