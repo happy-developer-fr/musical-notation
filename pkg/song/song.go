@@ -2,22 +2,22 @@ package song
 
 import (
 	"encoding/json"
-	"github.com/happy-developer-fr/musical_notation/musical_notation"
+	"github.com/happy-developer-fr/musical-notation/pkg/note"
 )
 
 //Song Represent a list of Notes
 type Song struct {
-	Notes []musical_notation.Note
+	Notes []note.Note
 }
 
 //Concat all notes
 func (s Song) Print() string {
 	var songPrinted = ""
-	for i, note := range s.Notes {
+	for i, aNote := range s.Notes {
 		if i != 0 {
 			songPrinted += ", "
 		}
-		songPrinted += note.Print()
+		songPrinted += aNote.Print()
 	}
 	return songPrinted
 }

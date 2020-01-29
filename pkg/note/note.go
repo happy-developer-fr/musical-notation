@@ -1,10 +1,9 @@
-package musical_notation
+package note
 
 import (
 	"fmt"
-
-	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
-	"github.com/happy-developer-fr/musical_notation/musical_notation/rhythm"
+	"github.com/happy-developer-fr/musical-notation/pkg/pitch"
+	"github.com/happy-developer-fr/musical-notation/pkg/rhythm"
 )
 
 //Note Define a note structure

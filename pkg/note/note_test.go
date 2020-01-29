@@ -1,10 +1,9 @@
-package musical_notation
+package note
 
 import (
 	"fmt"
+	"github.com/happy-developer-fr/musical-notation/pkg/pitch"
 	"testing"
-
-	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
 )
 
 func BenchmarkXxx(*testing.B) {

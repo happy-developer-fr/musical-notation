@@ -1,24 +1,23 @@
 package song
 
 import (
-	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical-notation/pkg/note"
+	"github.com/happy-developer-fr/musical-notation/pkg/pitch"
 	"testing"
-
-	"github.com/happy-developer-fr/musical_notation/musical_notation"
 )
 
-var note1 = musical_notation.Note{
+var note1 = note.Note{
 	Pitch:      pitch.C,
 	Octave:     2,
 	Alteration: pitch.Sharp,
 	Duration:   0.25,
 }
-var note2 = musical_notation.Note{
+var note2 = note.Note{
 	Pitch:    pitch.D,
 	Octave:   0,
 	Duration: 1,
 }
-var songNotes = []musical_notation.Note{note1, note2}
+var songNotes = []note.Note{note1, note2}
 var twoNoteSong = Song{Notes: songNotes}
 
 func TestSong(t *testing.T) {

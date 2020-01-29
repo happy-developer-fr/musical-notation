@@ -1,5 +1,5 @@
- docker stop musical_notation
- docker image rm musical_notation
- docker build -t musical_notation .
+ docker stop musical-notation
+ docker image rm musical-notation
+ docker build -t musical-notation .
 
- docker run -itd musical_notation
+ docker run -itd musical-notation

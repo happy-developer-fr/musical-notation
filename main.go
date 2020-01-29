@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/happy-developer-fr/musical_notation/musical_notation"
-	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical-notation/pkg/note"
+	"github.com/happy-developer-fr/musical-notation/pkg/pitch"
 )
 
 func main() {
-	fmt.Println(musical_notation.Note{
+	fmt.Println(note.Note{
 		Pitch:      pitch.C,
 		Octave:     1,
 		Duration:   0,

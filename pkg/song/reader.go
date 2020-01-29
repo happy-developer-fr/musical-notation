@@ -1,9 +1,11 @@
 package song
 
-import "github.com/happy-developer-fr/musical_notation/musical_notation"
+import (
+	"github.com/happy-developer-fr/musical-notation/pkg/note"
+)
 
 type Reader interface {
-	Next() (musical_notation.Note, uint32)
+	Next() (note.Note, uint32)
 }
 
 type songReader struct {
@@ -11,7 +13,7 @@ type songReader struct {
 	Position uint32
 }
 
-func (self *songReader) Next() (musical_notation.Note, uint32) {
+func (self *songReader) Next() (note.Note, uint32) {
 	n := self.Song.Notes[self.Position]
 	indice := self.Position
 	self.increment()
