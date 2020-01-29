@@ -2,6 +2,7 @@ package musical_notation
 
 import (
 	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
+	"gitlab.com/read-music-learner/musical-notation/musical_notation/rhythm"
 	"math/rand"
 	"sync"
 	"time"
@@ -14,10 +15,39 @@ func randomPitch(pitches []pitch.Pitch) pitch.Pitch {
 	return pitches[randomValue]
 }
 
+func randomAlteration() pitch.Alteration {
+	randomValue := rand.Intn(3)
+	switch randomValue {
+	case 0:
+		return pitch.Sharp
+	case 1:
+		return pitch.Flat
+	default:
+		return ""
+	}
+}
+
+func randomDuration() rhythm.Duration {
+	randomValue := rand.Intn(4)
+	switch randomValue {
+	case 0:
+		return 1
+	case 2:
+		return 0.5
+	case 3:
+		return 0.25
+	default:
+		return 0.125
+
+	}
+}
+
 func RandomNote(pitches []pitch.Pitch) Note {
 	doOnce.Do(func() {
 		rand.Seed(time.Now().UTC().UnixNano())
 	})
 	randomPitch := randomPitch(pitches)
-	return Note{Pitch: randomPitch}
+	randomAlteration := randomAlteration()
+	duration := randomDuration()
+	return Note{Pitch: randomPitch, Alteration: randomAlteration, Duration: duration}
 }
