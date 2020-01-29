@@ -1,10 +1,15 @@
 package musical_notation
 
 import (
+	"fmt"
 	"testing"
 
 	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
 )
+
+func BenchmarkXxx(*testing.B) {
+	fmt.Print("Yeah that's cool")
+}
 
 func TestNoteFormatWithDieseAndPositiveOctave(t *testing.T) {
 	note := Note{
