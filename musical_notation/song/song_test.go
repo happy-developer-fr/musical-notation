@@ -1,10 +1,10 @@
 package song
 
 import (
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
 	"testing"
 
-	"gitlab.com/read-music-learner/musical-notation/musical_notation"
+	"github.com/happy-developer-fr/musical_notation/musical_notation"
 )
 
 var note1 = musical_notation.Note{

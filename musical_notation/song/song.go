@@ -2,7 +2,7 @@ package song
 
 import (
 	"encoding/json"
-	"gitlab.com/read-music-learner/musical-notation/musical_notation"
+	"github.com/happy-developer-fr/musical_notation/musical_notation"
 )
 
 //Song Represent a list of Notes

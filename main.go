@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gitlab.com/read-music-learner/musical-notation/musical_notation"
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical_notation/musical_notation"
+	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
 )
 
 func main() {

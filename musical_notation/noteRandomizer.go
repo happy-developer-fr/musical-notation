@@ -1,8 +1,8 @@
 package musical_notation
 
 import (
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/rhythm"
+	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical_notation/musical_notation/rhythm"
 	"math/rand"
 	"sync"
 	"time"

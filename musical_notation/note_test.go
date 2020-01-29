@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"gitlab.com/read-music-learner/musical-notation/musical_notation/pitch"
+	"github.com/happy-developer-fr/musical_notation/musical_notation/pitch"
 )
 
 func BenchmarkXxx(*testing.B) {

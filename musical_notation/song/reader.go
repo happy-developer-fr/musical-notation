@@ -1,6 +1,6 @@
 package song
 
-import "gitlab.com/read-music-learner/musical-notation/musical_notation"
+import "github.com/happy-developer-fr/musical_notation/musical_notation"
 
 type Reader interface {
 	Next() (musical_notation.Note, uint32)
