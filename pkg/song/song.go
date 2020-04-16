@@ -3,10 +3,12 @@ package song
 import (
 	"encoding/json"
 	"github.com/happy-developer-fr/musical-notation/pkg/note"
+	uuid "github.com/satori/go.uuid"
 )
 
 //Song Represent a list of Notes
 type Song struct {
+	Id    uuid.UUID
 	Notes []note.Note
 }
 
